@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>1</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">7ab46444db327b80fba7d450cf96190c</sp_column>
+        <sp_widget display_value="HTML">8679ef89cb21120000f8d856634c9c4f</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-07-17 10:20:36</sys_created_on>
+        <sys_id>4dc4ac04db327b80fba7d450cf9619a6</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Event Registration</sys_name>
+        <sys_package display_value="Marketing" source="x_337899_marketing">d3913a9edbb0f300fba7d450cf9619bd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Marketing">d3913a9edbb0f300fba7d450cf9619bd</sys_scope>
+        <sys_update_name>sp_instance_4dc4ac04db327b80fba7d450cf9619a6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-07-17 10:22:10</sys_updated_on>
+        <title>Event Registration</title>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"html": {
+		"value": "<h1><strong>Marketing Event Attendee Registration&nbsp;</strong></h1><p><strong>Register to attend Events&nbsp;</strong></p>",
+		"displayValue": "<h1><strong>Marketing Event Attendee Registration&nbsp;</strong></h1>\n<p><strong>Register to attend Events&nbsp;</strong></p>"
+	}
+}]]></widget_parameters>
+    </sp_instance>
+    <sys_translated_text action="delete_multiple" query="documentkey=4dc4ac04db327b80fba7d450cf9619a6"/>
+</record_update>

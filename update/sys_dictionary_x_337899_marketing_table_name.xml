@@ -53,15 +53,15 @@
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2019-04-16 10:26:48</sys_created_on>
-        <sys_id>78723612dbf0f300fba7d450cf9619db</sys_id>
+        <sys_id>a27f33b7dbae3b80fba7d450cf961900</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Name</sys_name>
         <sys_package display_value="Marketing" source="x_337899_marketing">d3913a9edbb0f300fba7d450cf9619bd</sys_package>
         <sys_policy/>
         <sys_scope display_value="Marketing">d3913a9edbb0f300fba7d450cf9619bd</sys_scope>
         <sys_update_name>sys_dictionary_x_337899_marketing_table_name</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-04-16 10:26:48</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2019-07-17 07:37:45</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function($scope, spUtil) {
+/* widget controller */
+var c = this;
+/***
+Set up the Reference Field to Events.
+Bind field to c.data variables.
+***/
+$scope.evt = {
+displayValue: c.data.eventName,
+value: c.data.eventId,
+name: 'evt'
+};
+/***
+Add selected Attendee to the chosen Event.
+***/
+c.doIt = function() {
+	/***
+Basic field validation. Make sure entire form is filled in.
+***/
+if (!$scope.evt.value || !c.data.attendeeFirstName ||
+!c.data.attendeeLastName || !c.data.attendeeEmail)
+spUtil.addErrorMessage('Please fill out all fields on the form above.');
+else {
+/***
+Package up the form values to pass to the Server Script function.
+***/
+var input = {
+'event' : $scope.evt.value,
+'first_name' : c.data.attendeeFirstName,
+'last_name' : c.data.attendeeLastName,
+'email' : c.data.attendeeEmail
+};
+/***
+Call Server script passing input to the function
+***/
+c.server.get(input).then(function(r){
+if (r.data.success) {
+spUtil.addTrivialMessage(c.data.attendeeFirstName + ' ' +
+c.data.attendeeLastName + ' was successfully added to ' +
+$scope.evt.displayValue + ".");
+c.data.attendeeFirstName = c.data.attendeeLastName =
+c.data.attendeeEmail = '';
+} else {
+spUtil.addErrorMessage('There was a problem adding the attendee.
+Please contact your administrator.');
+}
+})
+}
+}
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css/>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>attendee_registration</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>Attendee Registration</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+/* populate the 'data' object */
+/* e.g., data.table = $sp.getValue('table'); */
+/***
+If a server call is performed, run this function.
+***/
+if (input){
+var attendee = new GlideRecord('x_<YOUR_SCOPE_HERE>_attendee');
+attendee.initialize();
+attendee.marketing_event = input.event;
+attendee.first_name = input.first_name;
+attendee.last_name = input.last_name;
+attendee.email = input.email;
+data.success = attendee.insert();
+return;
+}
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-07-17 10:16:56</sys_created_on>
+        <sys_id>57e36404db327b80fba7d450cf9619bf</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Attendee Registration</sys_name>
+        <sys_package display_value="Marketing" source="x_337899_marketing">d3913a9edbb0f300fba7d450cf9619bd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Marketing">d3913a9edbb0f300fba7d450cf9619bd</sys_scope>
+        <sys_update_name>sp_widget_57e36404db327b80fba7d450cf9619bf</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-07-17 10:19:17</sys_updated_on>
+        <template><![CDATA[<div>
+<div class="container">
+<form class="form-horizontal">
+<!-- Event picker -->
+<div class="form-group">
+<label for="mktg_event">Event</label>
+<sn-record-picker field="evt"
+table="'x_<YOUR_SCOPE_HERE>_marketing_event'"
+display-field="'name'"
+value-field="'sys_id'"
+                  display-fields="'short_description'"
+search-fields="'name'"
+page-size="20"
+id="mktg_event">
+</sn-record-picker>
+</div>
+<!-- First name -->
+<div class="form-group">
+<label for="exampleInputName2">First name</label>
+<input type="text" class="form-control" id="attendee_first"
+placeholder="Joe" ng-model="c.data.attendeeFirstName">
+</div>
+<!-- Last name -->
+<div class="form-group">
+<label for="exampleInputName2">Last name</label>
+<input type="text" class="form-control" id="attendee_last"
+placeholder="Employee" ng-model="c.data.attendeeLastName">
+</div>
+<!-- Email -->
+<div class="form-group">
+<label for="exampleInputEmail2">Email</label>
+<input type="email" class="form-control" id="attendee_email"
+placeholder="joe.employee@example.com" ng-model="c.data.attendeeEmail">
+</div>
+<button type="submit" class="btn btn-default" ng-click="c.doIt()"
+>Add</button>
+</form>
+</div>
+                  
+</div>]]></template>
+    </sp_widget>
+</record_update>

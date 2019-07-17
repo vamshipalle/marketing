@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_page">
+    <sp_page action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <css/>
+        <draft>false</draft>
+        <dynamic_title_structure/>
+        <id>marketing_event_management</id>
+        <internal>false</internal>
+        <public>false</public>
+        <roles/>
+        <short_description/>
+        <sys_class_name>sp_page</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-07-17 10:12:15</sys_created_on>
+        <sys_id>36d2e080db327b80fba7d450cf96190b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>marketing_event_management</sys_name>
+        <sys_package display_value="Marketing" source="x_337899_marketing">d3913a9edbb0f300fba7d450cf9619bd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Marketing">d3913a9edbb0f300fba7d450cf9619bd</sys_scope>
+        <sys_update_name>sp_page_36d2e080db327b80fba7d450cf96190b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-07-17 10:12:15</sys_updated_on>
+        <title>Marketing Event Management</title>
+    </sp_page>
+    <sys_translated_text action="delete_multiple" query="documentkey=36d2e080db327b80fba7d450cf96190b"/>
+</record_update>

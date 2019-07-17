@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_container">
+    <sp_container action="INSERT_OR_UPDATE">
+        <background_color/>
+        <background_image/>
+        <background_style>default</background_style>
+        <bootstrap_alt>false</bootstrap_alt>
+        <class_name/>
+        <container_class_name/>
+        <name>Attendee Registration - Container 1</name>
+        <order>1</order>
+        <sp_page display_value="attendee_registration">6fa4ac04db327b80fba7d450cf9619a2</sp_page>
+        <subheader>false</subheader>
+        <sys_class_name>sp_container</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-07-17 10:20:14</sys_created_on>
+        <sys_id>2ba46844db327b80fba7d450cf9619ea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Attendee Registration - Container 1</sys_name>
+        <sys_package display_value="Marketing" source="x_337899_marketing">d3913a9edbb0f300fba7d450cf9619bd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Marketing">d3913a9edbb0f300fba7d450cf9619bd</sys_scope>
+        <sys_update_name>sp_container_2ba46844db327b80fba7d450cf9619ea</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-07-17 10:20:14</sys_updated_on>
+        <title/>
+        <width>container</width>
+    </sp_container>
+</record_update>

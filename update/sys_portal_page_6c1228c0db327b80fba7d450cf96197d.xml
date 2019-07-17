@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update node_type="sys_portal_page" unload_date="2019-07-17 11:03:50">
+    <sys_portal_page action="INSERT_OR_UPDATE">
+        <layout/>
+        <order/>
+        <read_roles/>
+        <roles/>
+        <selectable>true</selectable>
+        <sys_class_name>sys_portal_page</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-07-17 10:09:06</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>6c1228c0db327b80fba7d450cf96197d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Marketing Event Management</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Marketing" source="x_337899_marketing">d3913a9edbb0f300fba7d450cf9619bd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Marketing">d3913a9edbb0f300fba7d450cf9619bd</sys_scope>
+        <sys_update_name>sys_portal_page_6c1228c0db327b80fba7d450cf96197d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-07-17 10:09:06</sys_updated_on>
+        <title>Marketing Event Management</title>
+        <user/>
+        <view/>
+    </sys_portal_page>
+</record_update>

@@ -4,22 +4,22 @@
         <license_condition/>
         <license_model>none</license_model>
         <license_roles/>
-        <name>x_337899_marketing_attendee</name>
+        <name>x_337899_marketing_sample_needit_table</name>
         <op_delete>true</op_delete>
         <op_insert>true</op_insert>
         <op_update>true</op_update>
         <owner_condition/>
         <sys_class_name>ua_table_licensing_config</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2019-04-16 11:34:18</sys_created_on>
-        <sys_id>af534b1edbf0f300fba7d450cf9619b6</sys_id>
+        <sys_created_on>2019-07-05 06:21:02</sys_created_on>
+        <sys_id>6a7fff77dbae3b80fba7d450cf9619f4</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>x_337899_marketing_attendee</sys_name>
+        <sys_name>x_337899_marketing_sample_needit_table</sys_name>
         <sys_package display_value="Marketing" source="x_337899_marketing">d3913a9edbb0f300fba7d450cf9619bd</sys_package>
         <sys_policy/>
         <sys_scope display_value="Marketing">d3913a9edbb0f300fba7d450cf9619bd</sys_scope>
-        <sys_update_name>ua_table_licensing_config_af534b1edbf0f300fba7d450cf9619b6</sys_update_name>
+        <sys_update_name>ua_table_licensing_config_6a7fff77dbae3b80fba7d450cf9619f4</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-04-16 11:34:18</sys_updated_on>
+        <sys_updated_on>2019-07-05 06:21:02</sys_updated_on>
     </ua_table_licensing_config>
 </record_update>

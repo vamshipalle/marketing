@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_operation">
+    <sys_ws_operation action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <consumes>application/json,application/xml,text/xml</consumes>
+        <consumes_customized>false</consumes_customized>
+        <default_operation_uri/>
+        <enforce_acl>cf9d01d3e73003009d6247e603f6a990</enforce_acl>
+        <http_method>GET</http_method>
+        <name>Get Event</name>
+        <operation_script><![CDATA[(function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+
+   // query for a marketing event whose sys_id matches the id in the URI path
+var event = new GlideRecord('x_<YOUR_SCOPE_HERE>_marketing_event');
+if(event.get('sys_id',request.pathParams.id)) {
+// build a result object to return
+// be sure to convert GlideElements to Strings
+// using getValue()/getDisplayValue()
+var result = {
+name: event.getDisplayValue('name'),
+location: {
+name: event.getDisplayValue('location'),
+value: event.getValue('location')
+},
+startDate: event.getValue('start_date'),
+endDate: event.getValue('end_date'),
+equipment: []
+};
+// now add any equipment related to the event to the result object
+var equipment = new GlideRecord('x_<YOUR_SCOPE_HERE>_equipment_request');
+equipment.addQuery('marketing_event',event.getUniqueValue());
+equipment.query();
+	while(equipment.next()) {
+var item = {
+type: equipment.getDisplayValue('type'),
+cost: equipment.getDisplayValue('type.cost')
+};
+result.equipment.push(item);
+}
+// return the result as an object, the platform will
+// convert the object to JSON or XML depending on
+// the headers in the request
+return result;
+}
+// if no matching id, return 404
+return new sn_ws_err.NotFoundError('No record matching id ' +
+request.pathParams.id + ' found');
+
+})(request, response);]]></operation_script>
+        <operation_uri>/api/x_337899_marketing/event/{id}</operation_uri>
+        <produces>application/json,application/xml,text/xml</produces>
+        <produces_customized>false</produces_customized>
+        <relative_path>/{id}</relative_path>
+        <request_example/>
+        <requires_acl_authorization>true</requires_acl_authorization>
+        <requires_authentication>true</requires_authentication>
+        <requires_snc_internal_role>true</requires_snc_internal_role>
+        <short_description/>
+        <sys_class_name>sys_ws_operation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-07-17 10:54:14</sys_created_on>
+        <sys_id>613ca488db327b80fba7d450cf9619f9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Get Event</sys_name>
+        <sys_package display_value="Marketing" source="x_337899_marketing">d3913a9edbb0f300fba7d450cf9619bd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Marketing">d3913a9edbb0f300fba7d450cf9619bd</sys_scope>
+        <sys_update_name>sys_ws_operation_613ca488db327b80fba7d450cf9619f9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-07-17 10:54:14</sys_updated_on>
+        <web_service_definition display_value="Event">f51c6488db327b80fba7d450cf96196f</web_service_definition>
+        <web_service_version/>
+    </sys_ws_operation>
+</record_update>
