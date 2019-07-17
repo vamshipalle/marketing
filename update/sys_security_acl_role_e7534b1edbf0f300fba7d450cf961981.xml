@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-04-16 11:34:17</sys_created_on>
+        <sys_id>e7534b1edbf0f300fba7d450cf961981</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_337899_marketing_attendee.x_337899_marketing.user</sys_name>
+        <sys_package display_value="Marketing" source="x_337899_marketing">d3913a9edbb0f300fba7d450cf9619bd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Marketing">d3913a9edbb0f300fba7d450cf9619bd</sys_scope>
+        <sys_security_acl display_value="x_337899_marketing_attendee">5f534b1edbf0f300fba7d450cf96197e</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_e7534b1edbf0f300fba7d450cf961981</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-04-16 11:34:17</sys_updated_on>
+        <sys_user_role display_value="x_337899_marketing.user" name="x_337899_marketing.user">27917212dbf0f300fba7d450cf96194e</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+</record_update>

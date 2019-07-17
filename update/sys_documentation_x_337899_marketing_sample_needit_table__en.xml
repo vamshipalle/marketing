@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="" label="Sample NeedIt table" language="en" table="x_337899_marketing_sample_needit_table">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element/>
+            <help/>
+            <hint/>
+            <label>Sample NeedIt table</label>
+            <language>en</language>
+            <name>x_337899_marketing_sample_needit_table</name>
+            <plural>Sample NeedIt tables</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-07-05 06:21:02</sys_created_on>
+            <sys_id>7ada71c0db2eff40fba7d450cf9619d3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Sample NeedIt table</sys_name>
+            <sys_package display_value="Marketing" source="x_337899_marketing">d3913a9edbb0f300fba7d450cf9619bd</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Marketing">d3913a9edbb0f300fba7d450cf9619bd</sys_scope>
+            <sys_update_name>sys_documentation_x_337899_marketing_sample_needit_table__en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-07-05 06:21:02</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="event_type" table="x_337899_marketing_table" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>event_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>LUG</label>
+            <language>en</language>
+            <name>x_337899_marketing_table</name>
+            <sequence>0</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-04-16 10:44:06</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d4e7fe92dbf0f300fba7d450cf961919</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-04-16 10:44:06</sys_updated_on>
+            <value>LUG</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>event_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Major</label>
+            <language>en</language>
+            <name>x_337899_marketing_table</name>
+            <sequence>1</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-04-16 10:44:06</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>50e73a16dbf0f300fba7d450cf9619ce</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-04-16 10:44:06</sys_updated_on>
+            <value>Major</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>event_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Seminar</label>
+            <language>en</language>
+            <name>x_337899_marketing_table</name>
+            <sequence>2</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-04-16 10:44:06</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>10e73a16dbf0f300fba7d450cf9619cf</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-04-16 10:44:06</sys_updated_on>
+            <value>Seminar</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>event_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Booth</label>
+            <language>en</language>
+            <name>x_337899_marketing_table</name>
+            <sequence>3</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-04-16 10:44:06</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>dce73a16dbf0f300fba7d450cf9619cf</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-04-16 10:44:06</sys_updated_on>
+            <value>Booth</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>event_type</element>
+            <name>x_337899_marketing_table</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-04-16 10:44:06</sys_created_on>
+            <sys_id>18e73a16dbf0f300fba7d450cf9619cd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>event_type</sys_name>
+            <sys_package display_value="Marketing" source="x_337899_marketing">d3913a9edbb0f300fba7d450cf9619bd</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Marketing">d3913a9edbb0f300fba7d450cf9619bd</sys_scope>
+            <sys_update_name>sys_choice_x_337899_marketing_table_event_type</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-04-16 10:44:06</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

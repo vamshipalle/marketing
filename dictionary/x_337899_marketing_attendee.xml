@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Attendee" max_length="40" name="x_337899_marketing_attendee" type="collection">
+        <element label="Marketing event" max_length="32" name="marketing_event" reference="x_337899_marketing_table" type="reference"/>
+        <element label="Phone" max_length="40" name="phone" type="integer"/>
+        <index name="index">
+            <element name="marketing_event"/>
+        </index>
+    </element>
+</database>
